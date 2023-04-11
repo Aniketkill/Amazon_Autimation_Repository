@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HighPrioritySuite" thread-count="3" parallel="tests">
+
+	<test name="ChromeTest" thread-count="4" parallel="classes">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="testNgPack.TestNgSanity" />
+			<class name="testNgPack.VerifyImageFunctionality" />
+			<class name="testNgPack.VerifyCartFunctionality" />
+			<class name="testNgPack.VerifyProceedToBuyFunctionality" />
+		
+		</classes>
+	</test> <!-- Test22032023 -->
+
+	<test name="FirefoxTest" thread-count="4" parallel="classes">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="testNgPack.TestNgSanity" />
+			<class name="testNgPack.VerifyImageFunctionality" />
+			<class name="testNgPack.VerifyCartFunctionality" />
+			<class name="testNgPack.VerifyProceedToBuyFunctionality" />
+		
+		</classes>
+	</test> <!-- Test22032023 -->
+
+	<test name="EdgeTest" thread-count="4" parallel="classes">
+		<parameter name="browser" value="Edge" />
+		<classes>
+			<class name="testNgPack.TestNgSanity" />
+			<class name="testNgPack.VerifyImageFunctionality" />
+			<class name="testNgPack.VerifyCartFunctionality" />
+			<class name="testNgPack.VerifyProceedToBuyFunctionality" />
+		
+		</classes>
+	</test> <!-- Test22032023 -->
+
+</suite> <!-- HighPrioritySuite -->
